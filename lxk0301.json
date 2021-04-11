@@ -30,6 +30,15 @@
       }
     },
     {
+      "name": "口袋书店",
+      "type": "cron",
+      "time": "1 8,12,18 * * * ",
+      "job": {
+        "type": "runjs",
+        "target": "https://jdsharedresourcescdn.azureedge.net/jdresource/jd_bookshop.js"
+      }
+    },
+    {
       "name": "京东汽车",
       "type": "cron",
       "time": "10 7 * * *",
@@ -48,12 +57,30 @@
       }
     },
     {
+      "name": "手机狂欢城",
+      "type": "cron",
+      "time": "0 0-18/6 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://jdsharedresourcescdn.azureedge.net/jdresource/jd_carnivalcity.js"
+      }
+    },
+    {
       "name": "签到领现金",
       "type": "cron",
       "time": "2 0-23/4 * * *",
       "job": {
         "type": "runjs",
         "target": "https://jdsharedresourcescdn.azureedge.net/jdresource/jd_cash.js"
+      }
+    },
+    {
+      "name": "财富岛",
+      "type": "cron",
+      "time": "5 0,8,13,19 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://jdsharedresourcescdn.azureedge.net/jdresource/jd_cfd.js"
       }
     },
     {
@@ -99,6 +126,15 @@
       "job": {
         "type": "runjs",
         "target": "https://jdsharedresourcescdn.azureedge.net/jdresource/jd_dreamFactory.js"
+      }
+    },
+    {
+      "name": "京东家庭号",
+      "type": "cron",
+      "time": "1 12,23 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://jdsharedresourcescdn.azureedge.net/jdresource/jd_family.js"
       }
     },
     {
@@ -183,6 +219,24 @@
       }
     },
     {
+      "name": "京小兑",
+      "type": "cron",
+      "time": "30 8,16,20 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://jdsharedresourcescdn.azureedge.net/jdresource/jd_jxd.js"
+      }
+    },
+    {
+      "name": "京喜农场",
+      "type": "cron",
+      "time": "0 9,12,18 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://jdsharedresourcescdn.azureedge.net/jdresource/jd_jxnc.js"
+      }
+    },
+    {
       "name": "京东快递签到",
       "type": "cron",
       "time": "10 0 * * *",
@@ -201,6 +255,15 @@
       }
     },
     {
+      "name": "5G盲盒（4.30）",
+      "type": "cron",
+      "time": "0 0,1-23/3 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://jdsharedresourcescdn.azureedge.net/jdresource/jd_mohe.js"
+      }
+    },
+    {
       "name": "京东秒秒币",
       "type": "cron",
       "time": "10 7 * * *",
@@ -210,12 +273,30 @@
       }
     },
     {
+      "name": "点点券",
+      "type": "cron",
+      "time": "10 0,20 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://jdsharedresourcescdn.azureedge.net/jdresource/jd_necklace.js"
+      }
+    },
+    {
       "name": "东东萌宠",
       "type": "cron",
       "time": "15 6-18/6 * * *",
       "job": {
         "type": "runjs",
         "target": "https://jdsharedresourcescdn.azureedge.net/jdresource/jd_pet.js"
+      }
+    },
+    {
+      "name": "女装盲盒（4.30）",
+      "type": "cron",
+      "time": "35 1,23 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://jdsharedresourcescdn.azureedge.net/jdresource/jd_nzmh.js"
       }
     },
     {
@@ -336,15 +417,6 @@
       }
     },
     {
-      "name": "点点券",
-      "type": "cron",
-      "time": "10 0,20 * * *",
-      "job": {
-        "type": "runjs",
-        "target": "https://jdsharedresourcescdn.azureedge.net/jdresource/jd_necklace.js"
-      }
-    },
-    {
       "name": "京喜签到",
       "type": "cron",
       "time": "5 0 * * *",
@@ -370,15 +442,6 @@
         "type": "runjs",
         "target": "https://raw.githubusercontent.com/i-chenzhe/qx/main/jd_shakeBean.js"
       }
-    },   
-    {
-      "name": "京东国际盲盒",
-      "type": "cron",
-      "time": "0 9,12,20,21 * * *",
-      "job": {
-        "type": "runjs",
-        "target": "https://jdsharedresourcescdn.azureedge.net/jdresource/jd_global_mh.js"
-      }
     },
     {
       "name": "京东赚京东开团",
@@ -387,33 +450,6 @@
       "job": {
         "type": "runjs",
         "target": "https://raw.githubusercontent.com/whyour/hundun/master/quanx/jd_zjd_tuan.js"
-      }
-    },
-    {
-      "name": "京东秒秒币",
-      "type": "cron",
-      "time": "10 7 * * *",
-      "job": {
-        "type": "runjs",
-        "target": "https://jdsharedresourcescdn.azureedge.net/jdresource/jd_ms.js"
-      }
-    },
-    {
-      "name": "京东家庭号",
-      "type": "cron",
-      "time": "1 12,23 * * *",
-      "job": {
-        "type": "runjs",
-        "target": "https://jdsharedresourcescdn.azureedge.net/jdresource/jd_family.js"
-      }
-    },
-    {
-      "name": "东东小窝",
-      "type": "cron",
-      "time": "16 22 * * *",
-      "job": {
-        "type": "runjs",
-        "target": "https://jdsharedresourcescdn.azureedge.net/jdresource/jd_small_home.js"
       }
     }
   ]
