@@ -105,6 +105,7 @@
       "name": "crazyJoy挂机",
       "type": "cron",
       "time": "10 12 * * *",
+      "running": false,
       "job": {
         "type": "runjs",
         "target": "https://raw.githubusercontent.com/xinruzhishuei/ssss/main/scripts/jd_crazy_joy_coin.js"
@@ -150,6 +151,7 @@
       "name": "获取互助码",
       "type": "cron",
       "time": "20 13 * * 6",
+      "running": false,
       "job": {
         "type": "runjs",
         "target": "https://jdsharedresourcescdn.azureedge.net/jdresource/jd_get_share_code.js"
