@@ -51,6 +51,7 @@
       "name": "京东汽车兑换",
       "type": "cron",
       "time": "0 0 * * *",
+      "running": false,
       "job": {
         "type": "runjs",
         "target": "https://jdsharedresourcescdn.azureedge.net/jdresource/jd_car_exchange.js"
