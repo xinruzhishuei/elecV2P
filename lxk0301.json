@@ -339,6 +339,15 @@
       }
     },
     {
+      "name": "十元街",
+      "type": "cron",
+      "time": "0 7 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://jdsharedresourcescdn.azureedge.net/jdresource/jd_syj.js"
+      }
+    },
+    {
       "name": "闪购盲盒",
       "type": "cron",
       "time": "20 8 * * *",
