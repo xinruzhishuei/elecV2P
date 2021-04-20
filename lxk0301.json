@@ -447,6 +447,15 @@
       }
     },
     {
+      "name": "整点红包雨",
+      "type": "cron",
+      "time": "1 0-23/1 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/nianyuguai/longzhuzhu/main/qx/jd_super_redrain.js"
+      }
+    },
+    {
       "name": "京东赚京东开团",
       "type": "cron",
       "time": "10 * * * *",
