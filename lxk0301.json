@@ -466,15 +466,6 @@
       }
     },
     {
-      "name": "东东健康社区",
-      "type": "cron",
-      "time": "10 0-23/4 * * *",
-      "job": {
-        "type": "runjs",
-        "target": "https://jdsharedresourcescdn.azureedge.net/jdresource/jd_health.js"
-      }
-    },
-    {
       "name": "幸运大转盘",
       "type": "cron",
       "time": "4 10 * * *",
