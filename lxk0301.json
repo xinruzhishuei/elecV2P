@@ -439,6 +439,51 @@
       }
     },
     {
+      "name": "球队赢好礼",
+      "type": "cron",
+      "time": "10 16 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://jdsharedresourcescdn.azureedge.net/jdresource/jd_tcl.js"
+      }
+    },
+    {
+      "name": "东东健康社区收集能量",
+      "type": "cron",
+      "time": "5-45/20 * * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://jdsharedresourcescdn.azureedge.net/jdresource/jd_health_collect.js"
+      }
+    },
+    {
+      "name": "东东健康社区",
+      "type": "cron",
+      "time": "10 0-23/4 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://jdsharedresourcescdn.azureedge.net/jdresource/jd_health.js"
+      }
+    },
+    {
+      "name": "东东健康社区",
+      "type": "cron",
+      "time": "10 0-23/4 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://jdsharedresourcescdn.azureedge.net/jdresource/jd_health.js"
+      }
+    },
+    {
+      "name": "幸运大转盘",
+      "type": "cron",
+      "time": "4 10 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://jdsharedresourcescdn.azureedge.net/jdresource/jd_market_lottery.js"
+      }
+    },
+    {
       "name": "京东会员摇一摇领京豆",
       "type": "cron",
       "time": "3 10 1 * *",
