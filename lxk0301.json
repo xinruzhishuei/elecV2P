@@ -475,12 +475,21 @@
       }
     },
     {
-      "name": "京东会员摇一摇领京豆",
+      "name": "幸运大转盘",
       "type": "cron",
-      "time": "3 10 1 * *",
+      "time": "4 10 * * *",
       "job": {
         "type": "runjs",
-        "target": "https://raw.githubusercontent.com/i-chenzhe/qx/main/jd_shakeBean.js"
+        "target": "https://jdsharedresourcescdn.azureedge.net/jdresource/jd_market_lottery.js"
+      }
+    },
+    {
+      "name": "领金贴",
+      "type": "cron",
+      "time": "10 0 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://jdsharedresourcescdn.azureedge.net/jdresource/jd_jin_tie.js"
       }
     },
     {
