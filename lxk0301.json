@@ -262,9 +262,20 @@
       "name": "5G盲盒（4.30）",
       "type": "cron",
       "time": "0 0,1-23/3 * * *",
+      "running": false,
       "job": {
         "type": "runjs",
         "target": "https://jdsharedresourcescdn.azureedge.net/jdresource/jd_mohe.js"
+      }
+    },
+    {
+      "name": "女装盲盒（4.30）",
+      "type": "cron",
+      "time": "35 1,23 * * *",
+      "running": false,
+      "job": {
+        "type": "runjs",
+        "target": "https://jdsharedresourcescdn.azureedge.net/jdresource/jd_nzmh.js"
       }
     },
     {
@@ -292,15 +303,6 @@
       "job": {
         "type": "runjs",
         "target": "https://jdsharedresourcescdn.azureedge.net/jdresource/jd_pet.js"
-      }
-    },
-    {
-      "name": "女装盲盒（4.30）",
-      "type": "cron",
-      "time": "35 1,23 * * *",
-      "job": {
-        "type": "runjs",
-        "target": "https://jdsharedresourcescdn.azureedge.net/jdresource/jd_nzmh.js"
       }
     },
     {
