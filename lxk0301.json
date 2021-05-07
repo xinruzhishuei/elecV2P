@@ -259,13 +259,13 @@
       }
     },
     {
-      "name": "5G盲盒（4.30）",
+      "name": "每日抽奖（5.30）",
       "type": "cron",
-      "time": "0 0,1-23/3 * * *",
+      "time": "13 1,22,23 * * *",
       "running": false,
       "job": {
         "type": "runjs",
-        "target": "https://jdsharedresourcescdn.azureedge.net/jdresource/jd_mohe.js"
+        "target": "https://jdsharedresourcescdn.azureedge.net/jdresource/jd_daily_lottery.js"
       }
     },
     {
