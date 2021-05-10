@@ -114,16 +114,6 @@
       }
     },
     {
-      "name": "整点红包雨",
-      "type": "cron",
-      "time": "1 0-23/1 * * *",
-      "running": false,
-      "job": {
-        "type": "runjs",
-        "target": "https://raw.githubusercontent.com/nianyuguai/longzhuzhu/main/qx/jd_super_redrain.js"
-      }
-    },
-    {
       "name": "刺客567之寻宝",
       "type": "cron",
       "time": "25 8,12 6-11 5 *",
