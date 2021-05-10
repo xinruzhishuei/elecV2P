@@ -169,6 +169,15 @@
       }
     },
     {
+      "name": "每日抽奖",
+      "type": "cron",
+      "time": "13 1,22,23 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://jdsharedresourcescdn.azureedge.net/jdresource/jd_daily_lottery.js"
+      }
+    },
+    {
       "name": "京东赚赚",
       "type": "cron",
       "time": "10 0 * * *",
