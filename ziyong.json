@@ -1,0 +1,42 @@
+{
+  "name": "ziyong",
+  "author": "elecV2P 专用定时任务订阅",
+  "list": [
+    {
+      "name": "吾爱签到",
+      "type": "cron",
+      "time": "7 1 0 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/NobyDa/Script/master/52pojie-DailyBonus/52pojie.js"
+      }
+    },
+    {
+      "name": "爱奇艺签到",
+      "type": "cron",
+      "time": "10 1 0 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js"
+      }
+    },
+    {
+      "name": "时光相册",
+      "type": "cron",
+      "time": "15 1 0 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/Naoko-simple/My-QuantumultX/master/chavyleung/everphoto/everphoto.js"
+      }
+    },
+    {
+      "name": "无忧行",
+      "type": "cron",
+      "time": "20 1 0 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://ooxx.be/js/jegotrip.js"
+      }
+    }
+  ]
+}
