@@ -1,0 +1,136 @@
+{
+  "name": "monk-coder",
+  "author": "elecV2P 专用定时任务订阅",
+  "list": [
+    {
+      "name": "粉丝互动",
+      "type": "cron",
+      "time": "3 10 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/monk-coder/dust/dust/i-chenzhe/z_fanslove.js"
+      }
+    },
+    {
+      "name": "京东超市-大转盘",
+      "type": "cron",
+      "time": "3 10 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/monk-coder/dust/dust/i-chenzhe/z_marketLottery.js"
+      }
+    },
+    {
+      "name": "母婴-跳一跳",
+      "type": "cron",
+      "time": "5 8,14,20 6-12 5 *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/monk-coder/dust/dust/i-chenzhe/z_mother_jump.js"
+      }
+    },
+    {
+      "name": "摇一摇",
+      "type": "cron",
+      "time": "3 20 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/monk-coder/dust/dust/i-chenzhe/z_shake.js"
+      }
+    },
+    {
+      "name": "超级无线组队分奖品",
+      "type": "cron",
+      "time": "25 3 * * 2",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/monk-coder/dust/dust/i-chenzhe/z_shop_captain.js"
+      }
+    },
+    {
+      "name": "京东众筹-众筹许愿池",
+      "type": "cron",
+      "time": "10 10,15 8-9 5 *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/monk-coder/dust/dust/i-chenzhe/z_wish.js"
+      }
+    },
+    {
+      "name": "探秘无限星空(5.13)",
+      "type": "cron",
+      "time": "15 8 9-13 5 *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/monk-coder/dust/dust/car/adolf_ETIP.js"
+      }
+    },
+    {
+      "name": "海尔_欢乐大逃亡(5.31)",
+      "type": "cron",
+      "time": "15 8 7-31 5 *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/monk-coder/dust/dust/car/adolf_haier.js"
+      }
+    },
+    {
+      "name": "加购有礼",
+      "type": "cron",
+      "time": "15 12 * * *",
+      "running": false,
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/monk-coder/dust/dust/car/monk_shop_add_to_car.js"
+      }
+    },
+    {
+      "name": "有机牧场",
+      "type": "cron",
+      "time": "0 0,1-22/2 1-31 4-7 *",
+      "running": false,
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/monk-coder/dust/dust/member/monk_pasture.js"
+      }
+    },
+    {
+      "name": "interCenter渠道店铺签到",
+      "type": "cron",
+      "time": "0 0 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/monk-coder/dust/dust/normal/monk_inter_shop_sign.js"
+      }
+    },
+    {
+      "name": "关注有礼",
+      "type": "cron",
+      "time": "15 15 * * *",
+      "running": false,
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/monk-coder/dust/dust/normal/monk_shop_follow_sku.js"
+      }
+    },
+    {
+      "name": "刺客567之寻宝",
+      "type": "cron",
+      "time": "25 8,12 6-11 5 *",
+      "running": false,
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/monk-coder/dust/dust/normal/adolf_oppo.js"
+      }
+    },
+    {
+      "name": "店铺大转盘",
+      "type": "cron",
+      "time": "3 0,10,23 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/monk-coder/dust/dust/normal/monk_shop_lottery.js"
+      }
+    }
+  ]
+}
