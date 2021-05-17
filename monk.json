@@ -124,6 +124,16 @@
       }
     },
     {
+      "name": "京东半点京豆雨龙猪猪",
+      "type": "cron",
+      "time": "30 * * * *",
+      "running": false,
+      "job": {
+        "type": "runjs",
+        "target": "https://ghproxy.com/https://raw.githubusercontent.com/nianyuguai/longzhuzhu/main/qx/jd_half_redrain.js"
+      }
+    },
+    {
       "name": "店铺大转盘",
       "type": "cron",
       "time": "3 0,10,23 * * *",
