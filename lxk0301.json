@@ -504,6 +504,15 @@
       }
     },
     {
+      "name": "金榜创造营(12.31)",
+      "type": "cron",
+      "time": "13 1,22 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://jdsharedresourcescdn.azureedge.net/jdresource/jd_gold_creator.js"
+      }
+    },
+    {
       "name": "领金贴",
       "type": "cron",
       "time": "10 0 * * *",
