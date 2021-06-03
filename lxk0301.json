@@ -169,6 +169,24 @@
       }
     },
     {
+      "name": "明星小店",
+      "type": "cron",
+      "time": "0 1,21 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://jdsharedresourcescdn.azureedge.net/jdresource/jd_star_shop.js"
+      }
+    },
+    {
+      "name": "5G超级盲盒(7.31)",
+      "type": "cron",
+      "time": "0 0,1-23/3 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://jdsharedresourcescdn.azureedge.net/jdresource/jd_mohe.js"
+      }
+    },
+    {
       "name": "每日抽奖",
       "type": "cron",
       "time": "13 1,22,23 * * *",
