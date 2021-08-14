@@ -1,20 +1,31 @@
 {
-  "name": "ziyong",
-  "author": "elecV2P 专用定时任务订阅",
+  "name": "elecV2P 定时任务订阅",
+  "author": "留个名字",
+  "desc": "xx 导出的任务订阅。该订阅适用于 elecV2P，与其他软件并不兼容。相关说明参考：https://github.com/elecV2/elecV2P-dei/tree/master/docs/06-task.md",
+  "date": "2021-08-15 00:51:36",
   "list": [
     {
-      "name": "吾爱签到",
+      "name": "会话切换",
       "type": "cron",
-      "time": "7 1 0 * * *",
+      "time": "45 30,31,32,33,34,35,36,37,38 10 * * *",
       "job": {
         "type": "runjs",
-        "target": "https://raw.githubusercontent.com/NobyDa/Script/master/52pojie-DailyBonus/52pojie.js"
+        "target": "https://raw.githubusercontent.com/chavyleung/scripts/master/box/switcher/box.switcher.js"
       }
     },
     {
-      "name": "爱奇艺签到",
+      "name": "无忧行",
       "type": "cron",
-      "time": "10 1 0 * * *",
+      "time": "5 30,31,32,33,34,35,36,37 10 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "jegotrip.js"
+      }
+    },
+    {
+      "name": "爱奇艺",
+      "type": "cron",
+      "time": "20 30,31,32 10 * * *",
       "job": {
         "type": "runjs",
         "target": "https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js"
@@ -23,19 +34,47 @@
     {
       "name": "时光相册",
       "type": "cron",
-      "time": "15 1 0 * * *",
+      "time": "3 0 0 * * *",
       "job": {
         "type": "runjs",
         "target": "https://raw.githubusercontent.com/Naoko-simple/My-QuantumultX/master/chavyleung/everphoto/everphoto.js"
       }
     },
     {
-      "name": "无忧行",
+      "name": "52破解",
       "type": "cron",
-      "time": "20 1 0 * * *",
+      "time": "5 0 0 * * *",
       "job": {
         "type": "runjs",
-        "target": "https://ooxx.be/js/jegotrip.js"
+        "target": "https://raw.githubusercontent.com/NobyDa/Script/master/52pojie-DailyBonus/52pojie.js"
+      }
+    },
+    {
+      "name": "清空日志",
+      "type": "cron",
+      "time": "30 58 23 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/elecV2/elecV2P/master/script/JSFile/deletelog.js"
+      }
+    },
+    {
+      "name": "软更新升级",
+      "type": "cron",
+      "time": "30 58 21 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/elecV2/elecV2P/master/script/JSFile/softupdate.js"
+      },
+      "running": false
+    },
+    {
+      "name": "重启 elecV2P",
+      "type": "schedule",
+      "time": "0",
+      "job": {
+        "type": "exec",
+        "target": "pm2 restart elecV2P"
       }
     }
   ]
